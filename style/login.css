@@ -1,0 +1,17 @@
+#loginSection {
+    background-image: url("../bilder/parasite.jpg");
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 100%
+}
+
+#loginSection fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+#loginSection div {
+    padding: 5px;
+    background-color: #634055; /*this is not a good colour...*/
+}

@@ -1,0 +1,21 @@
+video {
+    min-width: 360px;
+    max-height: 100%;
+    max-width: 100%;
+    justify-self: start;
+    align-self: start;
+}
+
+#videoSection {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    height: 100%;
+}
+
+#main {
+    align-self: start;
+}
+
+#chat {
+    display: none; /*is changed by onclick function*/
+}

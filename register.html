@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>StarWatch</title>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+    </script>
+
+    <link rel="stylesheet" href="style/main.css" type="text/css">
+    <link rel="stylesheet" href="style/videos.css" type="text/css">
+    <link rel="stylesheet" href="style/login.css" type="text/css">
+    <link rel="stylesheet" href="style/register.css" type="text/css">
+</head>
+<body>
+<section id="registerSection">
+    <div>
+        <form>
+            <fieldset>
+                <label>
+                    Registrierung
+                </label>
+                <fieldset id="userform">
+                    <label>
+                        Userinformation:
+                    </label>
+                    <input type="text" placeholder="Username" autofocus>
+                    <input type="password" placeholder="Passwort">
+                    <input type="password" placeholder="Passwort wiederholen">
+                    <input type="email" placeholder="Email">
+                    <input type="email" placeholder="Email wiederholen">
+                </fieldset>
+
+                <fieldset id="serviceform">
+                    <label>
+                        Zu verknüpfende Streaming-Services:
+                    </label>
+                    <label for="netflix">Netflix</label><input type="checkbox" name="services" id="netflix">
+                    <label for="prime">Amazon Prime</label><input type="checkbox" name="services" id="prime">
+                </fieldset>
+            </fieldset>
+        </form>
+    </div>
+</section>

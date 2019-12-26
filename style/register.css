@@ -1,0 +1,9 @@
+#registerSection {
+    height: 100%;
+
+}
+
+#userform {
+    display: flex;
+    flex-direction: column;
+}
