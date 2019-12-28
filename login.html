@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--TODO: change "login" in main window-->
 <head>
     <meta charset="UTF-8">
     <title>StarWatch</title>
@@ -34,6 +35,13 @@
     function openRegister() {
         window.innerHeight = 255;
         window.open("register.html", "_self");
+    }
+
+    function changeLoginToProfile(profileName) {
+        //TODO: get parent window
+        let navLogin = window.parent.document.getElementById("navLogin");
+        navLogin.onclick = function () {setProfile(profileName)};
+        navLogin.innerText = profileName;
     }
 </script>
 </html>

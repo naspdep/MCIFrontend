@@ -98,12 +98,12 @@
         }
     }
 
-    function setProfile () {
+    function setProfile (profileName) {
         let damn = document.getElementById("navLogin");
         damn.onclick = function () {
             navigation('profile');
         }
-        damn.innerText = "Profil";
+        damn.innerText = profileName;
     }
 
     function setLogin () {
