@@ -28,10 +28,11 @@ body {
             "footer";
     grid-template-rows: 110px 50px auto 50px;
     height: 100%;
+    /*background-image: linear-gradient(#424242,#424242,#424242,#424242,#424242,#424242,#424242,#424242,#424242,#424242,#424242,#424242,#424242,#424242,#424242,#424242,#4b3848);*/
     background-color: #424242;
     justify-content: center;
     color: #f2f2f2;
-    font-size: 20px;
+    font-size: 16px;
     font-family: Arial, sans-serif;
 }
 
@@ -39,7 +40,12 @@ body > * {
     width: 80vw;
 }
 
-.clickable:hover, .pseudolink:hover {
+footer img {
+    width: 10px;
+    height: 10px;
+}
+
+.clickable:hover, .pseudolink:hover, button:hover {
     cursor: pointer;
 }
 
@@ -128,6 +134,8 @@ b {
     align-content: center;
     background-image: linear-gradient(#c800ad, #98007d);
     min-width: 350px;
+    font-size: 20px;
+    /*border-radius: 200px;*/
 }
 
 #mainNav > * {
@@ -155,9 +163,57 @@ b {
 }
 
 #index > * {
-    background-color: #525252;
     margin: 25px 0;
-    border: 2px solid #4a4a4a;
-    border-right-color: #5a5a5a;
-    border-bottom-color: #5a5a5a;
+}
+
+.box {
+    border: 3px inset #3f3f3f;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #303030;
+}
+
+.intextLogo {
+    margin-top: 10px;
+    height: 40px;
+}
+
+button {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 12px;
+    background-image: linear-gradient(to top left, #aa0b95,#FF58E8);
+    border: none;
+}
+
+b, strong {
+    font-size: 1.2em;
+}
+
+#eventcounter {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#eventcounter .header {
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    padding-bottom: 10px;
+}
+
+#eventcounter tr, #eventcounter td {
+    border-bottom: 1px dotted #606060;
+    padding: 5px 0;
+}
+
+#eventcounter .date {
+    width: 100px;
+}
+
+#eventcounter .time {
+    width: 60px;
+}
+
+#eventcounter .title {
+    width: 200px;
 }

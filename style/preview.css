@@ -1,0 +1,73 @@
+
+
+#preview {
+    display: grid;
+    grid-template-columns: 70% 20%;
+    justify-content: space-evenly;
+}
+
+#preview > section {
+    margin: 25px 0;
+}
+
+#preview > section#previewText {
+    display: grid;
+    align-content:start;
+
+}
+
+#preview > section#previewText button {
+    width: 150px;
+    height: 30px;
+}
+
+#Text {
+    display: grid;
+    padding: 20px;
+    align-content: center;
+    margin-top: 100px;
+    height: 50%;
+}
+
+#previewImage {
+    display: grid;
+    justify-content: center;
+    align-content: start;
+}
+
+#previewImage > img {
+    max-height: 400px;
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+#filmLogo {
+    max-height: 100px;
+    max-width: 100%;
+}
+
+#filmLogoSec {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.companylogo {
+    height: 40px;
+    /*width: 20px;*/
+    background-color: #2a2a2a;
+    padding: 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    /*background-image: linear-gradient(to bottom right, #f2f2f2, #afafaf);*/
+    background-image: linear-gradient(to left, #525252, #686868);
+}
+
+#companylogos {
+    margin-top:10px;
+    /*padding: 10px;*/
+    display: grid;
+    justify-content: start;
+    align-content: start;
+    grid-auto-flow: column;
+}
