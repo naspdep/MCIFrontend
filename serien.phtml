@@ -5,15 +5,49 @@ include_once ("view/navLoggedin.html");
 
 <main id="series">
     <section id="diashow">
-        <section class="purpleline"></section>
-        <section id="imagelist">
-            <img/>
-            <img/>
-            <img/>
-            <img src="">
-            <img src="">
-        </section>
-        <section class="purpleline"></section>
+        <section class="purpleline" id="purpleline1"></section>
+        <!--<section id="imagelist">-->
+            <img id="arrow1" src="bilder/arrowpurp.png">
+            <img id="img1" src="bilder/serien/got.jpg">
+            <img id="img2" src="bilder/serien/LoveDeathRobots_poster.jpg">
+            <img id="img3" src="bilder/serien/MandalorianPosterV1.png">
+            <img id="img4" src="bilder/serien/rick-and-morty-55baa6ef74289.jpg">
+            <img id="img5" src="bilder/serien/unserplanet.jpg">
+            <img id="arrow2" src="bilder/arrowpurp.png">
+        <!--</section>-->
+        <section class="purpleline" id="purpleline2"></section>
+    </section>
+    <section id="serieslist">
+        <input type="search" id="search" placeholder="Suche"><img src="bilder/lupe.png" alt="" id="lupe">
+        <h3>Animation</h3>
+        <table id="animation" class="streamlist">
+            <tr><td class="listtitle">Attack on Titan</td>                  <td class="seasons">Seasons 1-3</td>    <td class="rating">7.8<img class="ratingstar" src="bilder/logo/LogoKonzeptSternBackgroundTransparent.png" alt="*"></td></tr>
+            <tr><td class="listtitle">Avatar: The Last Airbender</td>       <td class="seasons">Seasons 1-2</td>    <td class="rating">8.2<img class="ratingstar" src="bilder/logo/LogoKonzeptSternBackgroundTransparent.png" alt="*"></td></tr>
+            <tr><td class="listtitle">Dora the Explorer</td>                <td class="seasons">Seasons 1-8</td>    <td class="rating">6.1<img class="ratingstar" src="bilder/logo/LogoKonzeptSternBackgroundTransparent.png" alt="*"></td></tr>
+            <tr><td class="listtitle">Family Guy</td>                       <td class="seasons">Seasons 1-16</td>   <td class="rating">6.5<img class="ratingstar" src="bilder/logo/LogoKonzeptSternBackgroundTransparent.png" alt="*"></td></tr>
+            <tr><td class="listtitle">Franny's Feet</td>                    <td class="seasons">Season 1</td>       <td class="rating">4.3<img class="ratingstar" src="bilder/logo/LogoKonzeptSternBackgroundTransparent.png" alt="*"></td></tr>
+            <tr><td class="listtitle">Futurama</td>                         <td class="seasons">Seasons 1-7</td>    <td class="rating">9.1<img class="ratingstar" src="bilder/logo/LogoKonzeptSternBackgroundTransparent.png" alt="*"></td></tr>
+            <tr><td class="listtitle">Gravity Falls</td>                    <td class="seasons">Seasons 1-2</td>    <td class="rating">7.5<img class="ratingstar" src="bilder/logo/LogoKonzeptSternBackgroundTransparent.png" alt="*"></td></tr>
+            <tr><td class="listtitle">Looney Tunes</td>                     <td class="seasons">Seasons 1-2</td>    <td class="rating">6.3<img class="ratingstar" src="bilder/logo/LogoKonzeptSternBackgroundTransparent.png" alt="*"></td></tr>
+            <tr><td class="listtitle">Mr. Pickles</td>                      <td class="seasons">Season 1</td>       <td class="rating">1.9<img class="ratingstar" src="bilder/logo/LogoKonzeptSternBackgroundTransparent.png" alt="*"></td></tr>
+            <tr><td class="listtitle">Peppa Pig</td>                        <td class="seasons">Seasons 1-5</td>    <td class="rating">6.5<img class="ratingstar" src="bilder/logo/LogoKonzeptSternBackgroundTransparent.png" alt="*"></td></tr>
+            <tr><td class="listtitle">Rainbow Butterfly Unicorn Kitty</td>  <td class="seasons">Season 1</td>       <td class="rating">5.8<img class="ratingstar" src="bilder/logo/LogoKonzeptSternBackgroundTransparent.png" alt="*"></td></tr>
+            <tr><td class="listtitle">Ren&Stimpy</td>                       <td class="seasons">Seasons 3-5</td>    <td class="rating">8.4<img class="ratingstar" src="bilder/logo/LogoKonzeptSternBackgroundTransparent.png" alt="*"></td></tr>
+            <tr><td class="listtitle">Ren&Stimpy Adult Party Cartoon</td>   <td class="seasons">Season 1</td>       <td class="rating">3.7<img class="ratingstar" src="bilder/logo/LogoKonzeptSternBackgroundTransparent.png" alt="*"></td></tr>
+            <tr><td class="listtitle">Retarded Animal Babies</td>           <td class="seasons">Season 1</td>       <td class="rating">2.3<img class="ratingstar" src="bilder/logo/LogoKonzeptSternBackgroundTransparent.png" alt="*"></td></tr>
+            <tr><td class="listtitle">Rick and Morty</td>                   <td class="seasons">Seasons 1-3</td>    <td class="rating">7.2<img class="ratingstar" src="bilder/logo/LogoKonzeptSternBackgroundTransparent.png" alt="*"></td></tr>
+            <tr><td class="listtitle">South Park</td>                       <td class="seasons">Seasons 1-22</td>   <td class="rating">8.6<img class="ratingstar" src="bilder/logo/LogoKonzeptSternBackgroundTransparent.png" alt="*"></td></tr>
+            <tr><td class="listtitle">Spongebob</td>                        <td class="seasons">Seasons 1-11</td>   <td class="rating">7.8<img class="ratingstar" src="bilder/logo/LogoKonzeptSternBackgroundTransparent.png" alt="*"></td></tr>
+            <tr><td class="listtitle">Steven Universe</td>                  <td class="seasons">Seasons 1-6</td>    <td class="rating">7.1<img class="ratingstar" src="bilder/logo/LogoKonzeptSternBackgroundTransparent.png" alt="*"></td></tr>
+            <tr><td class="listtitle">Teen Titans</td>                      <td class="seasons">Seasons 1-5</td>    <td class="rating">9.2<img class="ratingstar" src="bilder/logo/LogoKonzeptSternBackgroundTransparent.png" alt="*"></td></tr>
+            <tr><td class="listtitle">Teen Titans GO!</td>                  <td class="seasons">Seasons 1-5</td>    <td class="rating">5.4<img class="ratingstar" src="bilder/logo/LogoKonzeptSternBackgroundTransparent.png" alt="*"></td></tr>
+            <tr><td class="listtitle">The Problem Solverz</td>              <td class="seasons">Season 1</td>       <td class="rating">3.4<img class="ratingstar" src="bilder/logo/LogoKonzeptSternBackgroundTransparent.png" alt="*"></td></tr>
+            <tr><td class="listtitle">The Simpsons</td>                     <td class="seasons">Seasons 1-30</td>   <td class="rating">7.7<img class="ratingstar" src="bilder/logo/LogoKonzeptSternBackgroundTransparent.png" alt="*"></td></tr>
+
+            <tr><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td></tr>
+        </table>
     </section>
 </main>
 

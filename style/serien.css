@@ -1,0 +1,116 @@
+#img1,#img5 {
+    height: 200px;
+    opacity: 0.2;
+    align-self: center;
+    justify-self: center;
+}
+
+#img2,#img4 {
+    height: 250px;
+    opacity: .5;
+    align-self: center;
+    justify-self: center;
+}
+
+#img3 {
+    height: 300px;
+    align-self: center;
+    justify-self: center;
+}
+
+#imagelist {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    justify-content: center;
+    align-content: center;
+}
+
+#diashow img {
+    margin: 5px;
+}
+
+#arrow1, #arrow2 {
+    width: 100px;
+    align-self: center;
+    justify-self: center;
+    margin: 0;
+}
+
+#arrow1 {
+    transform: scaleX(-1);
+}
+
+.purpleline {
+    height: 5px;
+    width: 100%;
+    background-image: linear-gradient(to right, #424242,#c800ad, #f2f2f2, #c800ad, #424242);
+    border-radius: 1000px;
+}
+
+#diashow {
+    display: grid;
+    grid-template-areas:
+            "line1 line1 line1 line1 line1 line1 line1"
+            "arrow1 image1 image2 image3 image4 image5 arrow2"
+            "line2 line2 line2 line2 line2 line2 line2";
+    justify-content: center;
+    align-content: center;
+    margin-top: 20px;
+}
+
+#purpleline1 {
+    grid-area: line1;
+}
+
+#purpleline2 {
+    grid-area: line2;
+}
+
+#lupe {
+    grid-area: lupe;
+    height: 18px;
+    margin: 40px 0;
+}
+
+#search {
+    grid-area: searchbar;
+    width: 50vw;
+    margin: 40px 2px;
+    background-color: #f2f2f2;
+}
+
+#serieslist {
+    display: grid;
+    grid-template-areas:
+            "searchbar lupe"
+            "headline headline"
+            "table table";
+    justify-content: center;
+}
+
+#serieslist h3 {
+    grid-area: headline;
+}
+
+#animation {
+    margin-top: 5px;
+    grid-area: table;
+    border-collapse: collapse;
+    color: #e2e2e2;
+}
+
+#animation tr, #animation td {
+    border: 1px solid #525252;;
+}
+
+#animation tr:nth-child(even) {
+    background-color: #4e434d;
+}
+
+#animation tr:nth-child(odd) {
+    background-color: #494949;
+}
+
+.ratingstar {
+    height: 18px;
+}

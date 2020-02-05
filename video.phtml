@@ -1,0 +1,61 @@
+<?php
+include_once ("view/header.html");
+include_once ("view/navLoggedin.html")
+?>
+<section id="videoSection">
+    <img src="bilder/filme/hp1logo.png" id="filmtitle">
+    <section id="video">
+        <!---->
+        <video controls poster="bilder/filme/Philosophers-Stone-Harry-Potter.jpg">
+            <source src="videos/dummyjpg-MyVideo-imagetovideo-com.mp4">
+            Ihr Browser unterstützt keine bekannten videoformate
+            <!--<iframe src="https://www.youtube.com/embed/F0jr-HQeT74" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        -->
+        </video>
+    </section>
+    <aside class="box" id="online">
+        Online:<br />
+        <ul>
+            <?php
+            $users = array(
+                "user_name123",
+                "plankroman",
+                "tartletgiftshop",
+                "bargraphbuck",
+                "ignitionenchantment",
+                "badseycorvus",
+                "acridcrawfish",
+                "peakniche",
+                "weathercetti",
+                "refutableopen",
+                "nibletzwodder",
+                "imaginaryhudeshope",
+                "bolterstockings",
+                "frolicradiantly",
+                "creamsindium",
+                "strollerdrive",
+                "portablelexi",
+                "muewill");
+            sort($users);
+            foreach ($users as $user) {
+                echo "<li>" . $user . "</li>";
+            }
+            ?>
+        </ul>
+
+        <section id="chat">
+            <p>imaginaryhudeshope</p>
+            <section id="chatverlauf" class="box">
+                <p>
+                    user_name123: Hi<br>
+                    <i class="me">imaginaryhudeshope: Hi</i><br>
+
+                </p>
+                <input type="text" placeholder="tell me a secret..."><button><img src="bilder/tick2.png" alt="ok"></button>
+            </section>
+
+        </section>
+    </aside>
+</section>
+<?php
+include_once ("view/footer.html");

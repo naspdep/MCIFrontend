@@ -19,11 +19,11 @@ function navigation(nav, logged) {
     switch (nav) {
         case "filme":
             navItem = document.getElementById("navFilme");
-            $("main").load("video.html");
+            $("main").load("video.phtml");
             break;
         case "serien":
             navItem = document.getElementById("navSerien");
-            $("main").load("video.html");
+            $("main").load("video.phtml");
             break;
         case "login":
             //open a popup window

@@ -8,14 +8,95 @@ video {
 
 #videoSection {
     display: grid;
-    grid-template-columns: 20% 60% 20%;
-    height: 100%;
+    grid-template-areas:
+            "title empty"
+            "video aside";
+    grid-template-columns: 68% 19%;
+    /*height: 100%;*/
+    justify-content: space-around;
+    margin-top: 20px;
 }
 
-#main {
-    align-self: start;
+#videoSection ul {
+    list-style-image: url('../bilder/sqpurple.gif');
+    margin-left: 30px;
 }
 
-#chat {
-    display: none; /*is changed by onclick function*/
+#chat  {
+    /*display: none;*/
+    position: absolute;
+    top: 392px;
+    left: 770px;
+    /*width: 250px;*/
+}
+
+#chat > p {
+    background-color: #363636;
+    border: 2px inset #88006d;
+    border-radius: 2px;
+    border-bottom: none;
+    opacity: .95;
+}
+
+#chatverlauf {
+    overflow: hidden;
+    height: 200px;
+    background-color: #363636;
+    border-color: #98007d;
+    display: grid;
+    align-content: end;
+    grid-auto-flow: column;
+    grid-template-areas:
+            "chat chat"
+            "text button";
+    opacity: .95;
+}
+
+#chatverlauf > input {
+    width: 180px;
+    /*justify-self: center;*/
+    padding: 2px;
+    grid-area: text;
+}
+
+#chatverlauf > button {
+    padding: 2px;
+    margin: 2px;
+    background-image: linear-gradient(to left, #525252, #686868);
+    border-radius: 7px;
+    grid-area: button;
+}
+
+#chatverlauf > button > img {
+    height: 18px;
+}
+
+#online {
+    height: 400px;
+    grid-area: aside;
+}
+
+#chatverlauf > p {
+    grid-area: chat;
+    margin-bottom: 5px;
+}
+
+.me {
+    color: #bf83bd;
+}
+
+/*#chat {
+    display: none; /*is changed by onclick function
+}*/
+
+#filmtitle {
+    height: 50px;
+    justify-self: center;
+    grid-area: title;
+    margin-bottom: 5px;
+}
+
+#video {
+    display: grid;
+    grid-area: video;
 }
